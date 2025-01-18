@@ -2,12 +2,14 @@ package net.ensah.discoveryservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class DiscoveryServiceApplication {
+@EnableEurekaServer
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(DiscoveryServiceApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
