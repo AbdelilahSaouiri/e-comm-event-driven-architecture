@@ -2,7 +2,7 @@ services:
   mariadb:
     image: 'mariadb:latest'
     environment:
-      - 'MARIADB_DATABASE=customer_db'
+      - 'MARIADB_DATABASE=product_db'
       - 'MARIADB_PASSWORD=1234'
       - 'MARIADB_ROOT_PASSWORD=root'
       - 'MARIADB_USER=abdelilah'

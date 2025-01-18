@@ -1,4 +1,7 @@
 package net.ensah.paymentservice.repository;
 
-public interface PaymentRepository {
+import net.ensah.paymentservice.entity.Payment;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PaymentRepository extends JpaRepository<Payment,String> {
 }
